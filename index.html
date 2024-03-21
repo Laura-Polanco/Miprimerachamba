@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trabajo 01</title>
+</head>
+<body>
+</body>
+<script>
+    //JSON
+    const AreaTriangulo = [
+        {
+            "Base": 10,
+            "Altura": 5
+        },
+        {
+            "Base": 20,
+            "Altura": 6
+        },
+        {
+            "Base": 30,
+            "Altura": 7
+        },
+        {
+            "Base": 4,
+            "Altura": 10
+        },
+        {
+            "Base": 15,
+            "Altura": 2
+        }
+    ];
+
+    function Area_Triangulo(Base, Altura){
+        var Area = (Base * Altura)/2;
+        console.log(Base+" y "+Altura+" es igual a "+Area)
+    }
+    AreaTriangulo.forEach(e => {
+        Area_Triangulo(e.Base, e.Altura, e.Area);
+    });
+
+</script>
+</html>
